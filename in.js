@@ -47,7 +47,8 @@ workFilter.forEach(function (item) {
   });
 });
 
-ButtonLoad.addEventListener("click", function () {
+ButtonLoad.addEventListener("click", function (e) {
+  e.preventDefault();
   workFilter.forEach(function (elem) {
     if (elem.classList.contains("active-filte")) {
       let workFilterdata = elem.dataset.name;
