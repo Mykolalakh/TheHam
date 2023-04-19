@@ -105,16 +105,6 @@ function showSlides(n) {
 
   dotPhoto[slideIndex - 1].classList.add("animaiton-carusel");
 }
-let ul = document.querySelector(".photo-people-list");
-
-ul.addEventListener("click", (event) => {
-  let et = event.target;
-  console.log(indexOf(et));
-  if (et.classList.contains("carusel-photo-people")) {
-    console.log(2);
-    currentSlides(n);
-  }
-});
 
 let buttons = document.querySelectorAll("button");
 buttons.forEach((button) => {
